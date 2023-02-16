@@ -2,9 +2,15 @@
 
 # Open the MySQL configuration file:
 
+mysql
 ```
 sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
 ```
+mariadb
+```
+nano /etc/mysql/mariadb.conf.d/50-server.cnf
+```
+
 Find the bind-address line and comment it out by adding a # character at the beginning:
 
 ```
