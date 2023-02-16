@@ -2,7 +2,7 @@ Install the required packages:
 
 ```
 sudo apt-get update
-sudo supervisor
+sudo apt-get install supervisor
 ```
 Create a new Laravel project:
 
