@@ -1,26 +1,26 @@
-# install nginx php on ubuntu.md
+# install nginx php on ubuntu
 ## Update the package list on your Ubuntu server:
 
 ```
 sudo apt update
 ```
 
-Install Nginx:
+## Install Nginx:
 ```
 sudo apt install nginx
 ```
 
-Install PHP and required modules:
+## Install PHP and required modules:
 ```
 sudo apt install php-fpm php-mysql php-curl php-gd php-mbstring php-xml php-xmlrpc
 ```
 
-Configure Nginx to work with PHP:
+## Configure Nginx to work with PHP:
 ```
 sudo nano /etc/nginx/sites-available/default
 ```
 
-Add the following lines to the server block:
+## Add the following lines to the server block:
 ```
 location / {
     try_files $uri $uri/ /index.php?$query_string;
@@ -33,7 +33,7 @@ location ~ \.php$ {
 ```
 Save and exit the file.
 
-Test the configuration and restart Nginx:
+## Test the configuration and restart Nginx:
 ```
 sudo nginx -t
 sudo systemctl restart nginx
