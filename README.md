@@ -1,7 +1,7 @@
 # install nginx php on ubuntu.md
 ## Update the package list on your Ubuntu server:
 
-´´´
+´´´terminal
 sudo apt update
 ´´´
 
