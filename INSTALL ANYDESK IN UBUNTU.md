@@ -17,8 +17,12 @@ sudo apt install anydesk
 ```
 After completing these steps, AnyDesk should be installed on your Ubuntu machine and ready to use. You can launch it using the command "anydesk" in the terminal or by searching for it in the applications menu.
 
-You can get the AnyDesk ID of the current machine using the terminal by running the following command:
+To set password
+```
+anydesk --set-password <password>
+```
 
+You can get the AnyDesk ID of the current machine using the terminal by running the following command:
 ```
 anydesk --get-id
 ```
