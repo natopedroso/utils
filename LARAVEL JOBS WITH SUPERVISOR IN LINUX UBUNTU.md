@@ -16,7 +16,7 @@ Add the following configuration to the file and save it:
 ```
 [program:laravel-worker]
 process_name=%(program_name)s_%(process_num)02d
-command=php /path/to/artisan queue:work --sleep=3 --tries=3
+command=php /path/to/artisan queue:work --queue=high,low
 autostart=true
 autorestart=true
 user=www-data
