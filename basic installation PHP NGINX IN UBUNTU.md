@@ -22,6 +22,11 @@ sudo nano /etc/nginx/sites-available/default
 
 ## Add the following lines to the server block:
 ```
+server {
+    ...
+    client_max_body_size 100M;
+    ...
+}
 location / {
     try_files $uri $uri/ /index.php?$query_string;
 }
