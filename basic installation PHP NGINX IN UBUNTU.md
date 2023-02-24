@@ -46,7 +46,11 @@ sudo systemctl restart nginx
 
 # Nginx Configuration:
 
-## In the /etc/nginx/nginx.conf file, you can modify the worker_processes and worker_connections values to optimize the use of system resources:
+## In the 
+```
+/etc/nginx/nginx.conf
+```
+file, you can modify the worker_processes and worker_connections values to optimize the use of system resources:
 
 ```
 user www-data;
