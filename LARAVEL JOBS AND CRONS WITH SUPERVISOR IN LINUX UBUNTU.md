@@ -26,6 +26,25 @@ stdout_logfile=/var/log/laravel-worker.log
 ```
 Replace /path/to/artisan with the path to the artisan script in your Laravel project.
 
+```
+sudo nano /etc/supervisor/conf.d/laravel-crons.conf
+```
+
+Add Following configuration to the file:
+
+```
+[program:laravel-crons]
+process_name=%(program_name)s_%(process_num)02d
+directory=/path/to/artisan
+command=php artisan schedule:work
+autostart=true
+autorestart=true
+user=root
+numprocs=1
+redirect_stderr=true
+stdout_logfile=/var/log/laravel-crons.log
+```
+
 Reread the Supervisor configuration and start the queue worker:
 
 ```
