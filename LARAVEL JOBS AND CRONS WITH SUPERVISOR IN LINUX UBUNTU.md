@@ -26,6 +26,8 @@ stdout_logfile=/var/log/laravel-worker.log
 ```
 Replace /path/to/artisan with the path to the artisan script in your Laravel project.
 
+Create a new supervisor configuration file for the CRONS worker:
+
 ```
 sudo nano /etc/supervisor/conf.d/laravel-crons.conf
 ```
