@@ -16,7 +16,7 @@ Add the following configuration to the file and save it:
 ```
 [program:laravel-worker]
 process_name=%(program_name)s_%(process_num)02d
-command=php /path/to/artisan queue:work --queue=high,low
+command=php /var/www/project/artisan queue:work --queue=high,low
 autostart=true
 autorestart=true
 user=www-data
@@ -37,7 +37,7 @@ Add Following configuration to the file:
 ```
 [program:laravel-crons]
 process_name=%(program_name)s_%(process_num)02d
-directory=/path/to/artisan
+directory=/var/www/project/
 command=php artisan schedule:work
 autostart=true
 autorestart=true
