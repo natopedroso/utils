@@ -26,4 +26,7 @@ defaults write com.apple.dock no-bouncing -bool true
 defaults write com.apple.AppleMultitouchTrackpad ActuationStrength -int 0
 defaults write com.apple.dock workspaces-swoosh-animation-off -bool YES
 defaults write com.apple.Safari AnimateWindowZoom -bool false
+defaults write com.apple.dock mineffect -string "scale"
+defaults write com.apple.dock minimize-to-application -bool true
+killall Dock
 ```
