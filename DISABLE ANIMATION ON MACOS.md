@@ -20,4 +20,10 @@ defaults write com.apple.Mail DisableReplyAnimations -bool true
 defaults write NSGlobalDomain NSWindowResizeTime .001
 defaults write com.apple.dock expose-animation-duration -int 0; killall Dock
 defaults write com.apple.dock expose-animation-duration -float 0.1; killall Dock
+defaults write com.apple.universalaccess reduceTransparency -bool true
+defaults write com.apple.screencapture disable-shadow -bool true
+defaults write com.apple.dock no-bouncing -bool true
+defaults write com.apple.AppleMultitouchTrackpad ActuationStrength -int 0
+defaults write com.apple.dock workspaces-swoosh-animation-off -bool YES
+defaults write com.apple.Safari AnimateWindowZoom -bool false
 ```
