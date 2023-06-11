@@ -1,25 +1,25 @@
-CRIE A CHAVE
+Create the key in your pc
 ```
  ssh-keygen -t rsa
  ```
 
-ENTRE NO SERVIDOR E CRIE A PASTA
+Now enter the remote server and create that directory
 ```
 mkdir -p ~/.ssh
 ```
 
-CRIE O ARQUIVO E INCLUA O TEXTO DA CHAVE ".pub"
+Create the fle with the string from ".pub" created
 ```
 nano ~/.ssh/authorized_keys
 ```
 
-CONFIGURE AS PERMISSOES
+SET the permissions
 ```
 chmod 700 ~/.ssh
 chmod 600 ~/.ssh/authorized_keys
 ```
 
-AGORA PARA ABRIR SSH COM SUA CHAVE
+To open now with your key
 ```
 ssh -i chave usuario@host
 ```
