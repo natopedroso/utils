@@ -21,5 +21,5 @@ chmod 600 ~/.ssh/authorized_keys
 
 To open now with your key
 ```
-ssh -i chave usuario@host
+ssh -i key user@host
 ```
