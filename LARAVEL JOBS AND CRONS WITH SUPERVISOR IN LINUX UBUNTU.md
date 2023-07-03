@@ -52,8 +52,8 @@ Reread the Supervisor configuration and start the queue worker:
 ```
 sudo supervisorctl reread
 sudo supervisorctl update
-sudo supervisorctl start laravel-worker:*
-sudo supervisorctl start laravel-crons:*
+sudo supervisorctl restart laravel-worker:*
+sudo supervisorctl restart laravel-crons:*
 ```
 This will start the queue worker and it will listen for new jobs to process.
 
