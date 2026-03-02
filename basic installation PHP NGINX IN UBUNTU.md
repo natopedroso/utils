@@ -12,7 +12,9 @@ sudo apt install nginx
 
 ## Install PHP and required modules:
 ```
-sudo apt install php-fpm php-mysql php-curl php-gd php-mbstring php-xml php-xmlrpc
+sudo add-apt-repository ppa:ondrej/php
+sudo apt update
+sudo apt install php8.0-fpm php8.0-mysql php8.0-curl php8.0-gd php8.0-mbstring php8.0-xml php8.0-xmlrpc
 ```
 
 ## Configure Nginx to work with PHP:
