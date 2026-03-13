@@ -27,6 +27,7 @@ sudo nano /etc/nginx/sites-available/default
 server {
     ...
     client_max_body_size 100M;
+    keepalive_timeout 0; #para API IOS
     ...
 }
 location / {
